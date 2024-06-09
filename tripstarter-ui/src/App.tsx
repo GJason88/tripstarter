@@ -1,35 +1,40 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <div id='main-page'>
+      <div className='content-row main-page-header'>
+        <p className='logo'>TripStarter</p>
+        <div className='main-page-nav'>
+          <a>Why TripStarter?</a>
+          <a>FAQ</a>
+          <a>About</a>
+          <div className='main-page-nav-buttons'>
+            <button className='main-page-sign-in-button'>Log In</button>
+            <button className='main-page-sign-in-button'>Sign Up</button>
+          </div>
+        </div>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
+      <div className='content-row main-page-body'></div>
+      <div className='main-page-problem'>
+        <div className='main-page-problem-text'>
+            <h2>The Problem</h2>
+            <h1>Trip planning often fails, before it even starts</h1>
+            <p>
+            Many find it true that the toughest (and most boring) part of starting a group trip is figuring out the dates
+            everyone can agree on.
+            </p>
+            <p>
+            This needs to happen before logistics (lodging, flights, and itinerary planning) can even start to be
+            coordinated.
+            </p>
+            <p>
+            Once the ball gets rolling, planning these logistics is straightforward as there already exist a plethora of
+            solutions to choose from.
+            </p>
+        </div>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+      <div className='content-row main-page-solution'></div>
+    </div>
+  );
 }
 
-export default App
+export default App;

@@ -1,0 +1,21 @@
+@use 'pages/main-page';
+@font-face {
+    font-family: 'Karma';
+    src: url('../assets/fonts/Karma-Regular.ttf');
+}
+@font-face {
+    font-family: 'Kavoon';
+    src: url('../assets/fonts/Kavoon-Regular.ttf');
+}
+
+html {
+    font-family: 'Karma';
+    background-color: #DEF0F5;
+}
+
+.logo {
+    font-size: 64px;
+    font-family: 'Kavoon';
+    color: #DD6C6C;
+    margin-top: 0px;
+}

@@ -1,0 +1,79 @@
+#main-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-page-header {
+    display: flex;
+    flex-direction: row;
+    margin-top: 32px;
+    width: 1152px;
+
+    .main-page-nav {
+        display: flex;
+        flex-direction: row;
+        gap: 64px;
+        position: absolute;
+        top: 32px;
+        right: 0;
+    }
+
+    .main-page-sign-in-buttons {
+        display: flex;
+        flex-direction: row;
+        gap: 8px;
+    }
+
+    .main-page-sign-in-button {
+        border-radius: 8px;
+    }
+}
+
+.main-page-problem {
+    display: flex;
+    flex-direction: column;
+    width: 1920px;
+    height: 1500px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #616161;
+    color:#ffffff;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    
+    .main-page-problem-text {
+        margin-top: -128px;
+    }
+
+    h2 {
+        color: #FFE6BF;
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 45.58px;
+    }
+
+    h1 {
+        width: 695px;
+        height: 156px;
+        top: 1310px;
+        left: 613px;
+        gap: 0px;
+        opacity: 0px;
+        font-size: 58px;
+        font-weight: 700;
+        line-height: 78px;
+    }
+
+    p {
+        font-size: 28px;
+        font-weight: 400;
+        line-height: 40.68px;
+        width: 720px;
+        gap: 0px;
+        opacity: 0px;
+    }
+
+}
+
+
